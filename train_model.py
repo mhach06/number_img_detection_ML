@@ -72,7 +72,7 @@ if __name__ == '__main__':
             if batch_nr != eval_batch_nr:  # train
                 loss = train_model(img, labels)
                 print(f"Epoch {epoch}: Batch {batch_nr}: Training Loss: {loss}")
-            else:
+            else: # Eval
                 loss = eval_model(img, labels)
                 print(f"Epoch {epoch}: Batch {batch_nr}: Eval Loss: {loss}")
 
